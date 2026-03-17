@@ -1,0 +1,13 @@
+name: My First Github workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  demo: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greetings
+        run: echo "Greetings this message is triggered from workflow"
